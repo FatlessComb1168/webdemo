@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animation CSS</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <meta charset="utf-8" />
+        <meta name="viewport" />
+	<style>
+		body {
+    background-color: black;
+    animation-name: new;
+    animation-duration: 30s;
+    animation-delay: 4.5s;
+}
+h1 {
+    font-family: Open Sans;
+    color: black;
+    animation-name: a;
+    animation-duration: 0.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+h4 {
+    animation-name: newone;
+    animation-duration: 0.5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    font-family: Open Sans;
+}
+h5 {
+    padding: 0px 0px 0px 111px;
+    color: white;
+    opacity: 0;
+    animation-name: credits;
+    animation-duration: 1.3s;
+    animation-delay: 33s;
+    animation-fill-mode: forwards;
+    font-family: Open Sans;
+}
+@keyframes a {
+    from {padding: 230px 0px 0px 50px; color: black;}
+    to {padding: 200px 0px 0px 50px; color: white;};
+}
+@keyframes new {
+    10% {background-color: grey;}
+    20% {background-color: red;}
+    30% {background-color: yellow;}
+    40% {background-color: blue;}
+    50% {background-color: orange;}
+    60% {background-color: purple;}
+    70% {background-color: yellow;}
+    80% {background-color: pink;}
+    90% {background-color: red;}
+    100% {background-color: black;}
+}
+@keyframes newone {
+    from {color: black; padding: 30px 0px 0px 50px;}
+    to {color: white; padding: 0px 0px 0px 50px;}
+}
+@keyframes credits {
+    0% {padding: 5px 0px 0px 50px;}
+    30% {opacity: 1; padding: 0px 0px 0px 50px; text-shadow: 10px 10px 0px grey;}
+    100% {color: yellow; text-shadow: 1px 1px 0px grey; opacity: 1; padding: 0px 0px 0px 50px;}
+}
+        </style>
+    </head>
+    <body>
+        <h1>Привет!</h1>
+        <h4>Не покидай эту страницу, у меня есть сюрприз для тебя!</h4>
+        <h5>Спасибо за просмотр!</h5>
+    </body>
+</html>
+<!--- WAIT 5 SECONDS FOR ANIMATION -->
